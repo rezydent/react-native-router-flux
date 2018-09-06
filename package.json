@@ -38,9 +38,10 @@
   ],
   "dependencies": {
     "react-addons-pure-render-mixin": "15.0.2",
-    "react-native-experimental-navigation": "0.26.x",
+    "react-native-experimental-navigation": "git://github.com/rezydent/react-native-experimental-navigation.git#b8a9ea78b2df038d5088bcf88ce85a689cd191ca",
     "react-native-tabs": "^1.0.9",
-    "react-static-container": "1.0.1"
+    "react-static-container": "1.0.1",
+	"prop-types": "^15.6.2"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
