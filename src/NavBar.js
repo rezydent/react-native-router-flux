@@ -33,6 +33,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  ViewPropTypes,
 } from 'react-native';
 import Actions from './Actions';
 import _drawerImage from './menu_burger.png';
@@ -159,7 +160,7 @@ const propTypes = {
   wrapBy: PropTypes.any,
   component: PropTypes.any,
   backButtonTextStyle: Text.propTypes.style,
-  leftButtonStyle: View.propTypes.style,
+  leftButtonStyle: (View.propTypes || ViewPropTypes).style,
   leftButtonIconStyle: Image.propTypes.style,
   getTitle: PropTypes.func,
   titleWrapperStyle: Text.propTypes.style,
@@ -167,7 +168,7 @@ const propTypes = {
   titleOpacity: PropTypes.number,
   titleProps: PropTypes.any,
   position: PropTypes.object,
-  navigationBarStyle: View.propTypes.style,
+  navigationBarStyle: (View.propTypes || ViewPropTypes).style,
   navigationBarBackgroundImage: Image.propTypes.source,
   renderTitle: PropTypes.any,
 };
